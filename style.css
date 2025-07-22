@@ -1,4 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   width: 100%;
+}
+
+/* CSS rule for body tag - font family and font size */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* CSS rule for header tag - background color */
+header {
+  background-color: #2c3e50;
+}
+
+/* CSS rule for nav tag - background color */
+nav {
+  background-color: #34495e;
+}
+
+/* CSS rule for main tag - background color and font size */
+main {
+  background-color: #ecf0f1;
+  font-size: 18px;
+}
+
+/* CSS rule for footer tag - background color */
+footer {
+  background-color: #2c3e50;
+}
+
+/* CSS rule for li tag - display and width */
+li {
+  display: inline-block;
+  width: 200px;
+}
+
+/* CSS rule for h1 tag - text alignment, font family, and color */
+h1 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+}
+
+/* CSS rule for p tag - line height */
+p {
+  line-height: 1.8;
 }
