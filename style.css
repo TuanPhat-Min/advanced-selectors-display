@@ -30,6 +30,13 @@ header {
 nav {
   background-color: #34495e;
   padding: 15px;
+  display: inline-block;
+  width: 80%;
+}
+
+/* Descendent selector for images in nav */
+nav img {
+  width: 10%;
 }
 
 nav ul {
@@ -75,11 +82,13 @@ footer {
 }
 
 /* CSS rule for li tag - display and width */
+/*
 li {
   display: inline-block;
   width: 200px;
   margin: 0 10px;
 }
+*/
 
 /* CSS rule for h1 tag - text alignment, font family, and color */
 h1 {
@@ -99,4 +108,25 @@ p {
   line-height: 1.8;
   margin-bottom: 15px;
   text-align: justify;
+}
+
+/* Grid class styling */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Descendent selector for images in grid class */
+.grid img {
+  width: 100%;
+}
+
+/* Flex class styling */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
