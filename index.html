@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Introduction</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Springtime In Michigan</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <a href="#main-content">Skip to Main Content</a>
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+
   <header>
-    <h1>Welcome to My Personal Introduction</h1>
+    <nav class="nav-bar">
+      <ul>
+        <li class="left"><a href="index.html">Home</a></li>
+        <li class="center"><a href="neighborhood.html">Neighborhood Walks</a></li>
+        <li class="right"><a href="parks.html">Walks in the Park</a></li>
+      </ul>
+      <img src="images/imageHeader.jpg" alt="Brown Labradoodle statue" />
+    </nav>
+    <h1>Springtime in Michigan</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main id="main">
+    <p>Springtime in <a href="https://www.michigan.org/city/ann-arbor">Ann Arbor</a> is beautiful. Even though it can be chilly at times, it's nice to walk my dog Bacon.</p>
 
-  <main id="main-content">
-    <section id="about">
-      <h1>About Me</h1>
-      <p>Hello! I'm excited to introduce myself to you. I'm passionate about web development and creating engaging digital experiences.</p>
-      <p>This page demonstrates my understanding of HTML structure and CSS styling, showcasing various semantic elements working together.</p>
+    <p>Sometimes we walk around the neighborhood, other times we visit the woods or rivers like the <a href="https://www.annarbor.org/things-to-do/recreation-outdoors/huron-river/">Huron River Watertrail</a> and <a href="https://www.a2gov.org/departments/Parks-Recreation/parks-places/argo/pages/default.aspx">Argo Cascades</a>.</p>
+
+    <section class="grid">
+      <img src="images/image1.jpg" alt="Walk 1" />
+      <img src="images/image2.jpg" alt="Walk 2" />
     </section>
 
-    <section id="skills">
-      <h1>My Skills</h1>
-      <p>I have experience with HTML, CSS, and JavaScript. I enjoy creating well-structured, accessible web pages with clean, maintainable code.</p>
-      <p>I'm always eager to learn new technologies and improve my existing skills through hands-on projects like this one.</p>
-    </section>
-
-    <section id="contact">
-      <h1>Get In Touch</h1>
-      <p>Feel free to reach out if you'd like to connect or learn more about my work. I'm always open to new opportunities and collaborations.</p>
+    <section class="flex">
+      <img src="images/image3.jpg" alt="Walk 3" />
+      <img src="images/image4.jpg" alt="Walk 4" />
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Personal Introduction Page. Built with HTML and CSS.</p>
+    <p>This page was originally created by Colleen van Lent for the <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody</a> Specialization. Students are invited to make changes.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
