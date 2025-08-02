@@ -1,0 +1,68 @@
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Navigation using Flexbox */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+.nav li {
+  list-style: none;
+  margin: 0 15px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+.nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* General Image Styling using Box Model */
+img {
+  border: 3px solid #444;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 100%;
+}
+
+/* Grid Layout for Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Hover + Transition */
+.gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* nth-child for fun variation */
+.gallery img:nth-child(odd) {
+  border-radius: 25px;
+}
